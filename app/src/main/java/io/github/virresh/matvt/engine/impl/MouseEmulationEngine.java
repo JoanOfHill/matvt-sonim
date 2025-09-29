@@ -283,7 +283,7 @@ public class MouseEmulationEngine {
                 }
                 consumed = true;
             }
-            else if(keyEvent.getKeyCode() == KeyEvent.KEYCODE_DPAD_CENTER) {
+            else if(keyEvent.getKeyCode() == KeyEvent.KEYCODE_ENTER) {
                 // just consume this event to prevent propagation
                 consumed = true;
             }
@@ -296,7 +296,7 @@ public class MouseEmulationEngine {
                 detachPreviousTimer();
                 consumed = true;
             }
-            else if (keyEvent.getKeyCode() == KeyEvent.KEYCODE_DPAD_CENTER) {
+            else if (keyEvent.getKeyCode() == KeyEvent.KEYCODE_ENTER) {
                 detachPreviousTimer();
                 if (keyEvent.getEventTime() - keyEvent.getDownTime() > 500) {
                     // unreliable long click event if button was pressed for more than 500 ms
